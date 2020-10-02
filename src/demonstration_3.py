@@ -14,4 +14,3 @@ return -1.
 """
 def first_unique_char(string):
     # Your code here
-
