@@ -43,6 +43,8 @@ Return:
 # EXECUTE
 
 # REFLECT
+#     Does it need to return each item on a newline?
+
 def lambda_school(n):
     # Your code here
     newList = []
