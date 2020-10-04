@@ -30,6 +30,38 @@ Return:
     "LambdaSchool"
 ]
 """
+# UNDERSTAND
+#     Creates list of numbers
+#     Multiples of 3 are replaced with Lambda
+#     Multiples of 5 are replaced with School
+#     Multiples of 15 are replaced with LambdaSchool
+
+# PLAN
+#     While loop to add the number as a string to the list
+#     Check for Multiples and add the appropriate string
+
+# EXECUTE
+
+# REFLECT
 def lambda_school(n):
     # Your code here
+    newList = []
+    firstWord = "Lambda"
+    secondWord = "School"
 
+    i = 0
+    while i < n:
+        i += 1
+        if i % 3 == 0 and i % 5 == 0:
+            newList.append(firstWord + secondWord)
+        elif i % 3 == 0:
+            newList.append(firstWord)
+        elif i % 5 == 0:
+            newList.append(secondWord)
+        else:
+            newList.append(str(i))
+
+    return newList
+
+
+print(lambda_school(15))
