@@ -12,6 +12,8 @@ return 2.
 string = "abcabc"
 return -1.
 """
+
+
 # UNDERSTAND
 #     Check for non repeating characters.
 #     If none are found return a -1
@@ -37,6 +39,9 @@ def first_unique_char(string):
 
     return num
 
+
 print(first_unique_char("lambdaschool"))
+
 print(first_unique_char("lovelambdaschool"))
+
 print(first_unique_char("abcabc"))
